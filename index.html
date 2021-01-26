@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<!-- Javascript page -->
+<script src="script.js"></script>
+	<script>
+		function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+		
+function random() {
+  document.getElementById('randomvalue').innerHTML= getRndInteger(1,10000000);
+}
+</script>
+	<title>Script</title>
+</head>
+
+	<body>
+		
+	<h4 class="a">A simple JQuery calculator</h4>
+		<hr>
+		First Number  <input type="text" id="txtNo1" placeholder="Enter first number"><br>
+		<br>
+        Second Number  <input type="text" id="txtNo2" placeholder="Enter second number"><br>
+	    <br>
+        <input type="button" class="btn btn-success" id="btnAdd" value="Add">    
+        <input type="button" class="btn btn-info" id="btnSubstract" value="Substract">    
+        <input type="button" class="btn btn-danger" id="btnMultiply" value="Multiply">    
+        <input type="button" class="btn btn-warning" id="btnDivide" value="Divide"> 
+		<br>
+		<br>
+        The result is: <input type="text" id="rslt" >
+        <hr>
+		<p class="l">Click buttom for go to google</p>
+		
+         <a class="btn btn-info" id="google" href="https://www.google.com" target="_blank" role="button"><span class="glyphicon glyphicon-search"></span>Click</a>
+		<br>
+		<br>
+	<div id="sl" style="background:green;height:100px;width:100px;position:absolute;"></div>
+	<p class="space">click start animation</p>
+<button id="black" type="button" class="btn btn-info">start animation</button>
+		<br>
+		<br>
+<p id="abc">hide or show</p>
+<button id="hide" class="btn btn-warning">hide</button>
+<button id="show" class="btn btn-success">show</button>
+		<br>
+		<br>
+<p id="date">Time</p>
+<p id="dateresult"></p>
+<button class="btn btn-info" onclick="document.getElementById('dateresult').innerHTML= Date()">click for the date</button>
+		<br>
+		<br>
+<p id="light">turn on or off the light</p>
+<tr>
+
+<img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+<button id="bulboff" class="btn btn-info" onclick="document.getElementById('bulb').src='https://www.w3schools.com/js/pic_bulbon.gif';">turn on</button>
+<button id="bulbon" class="btn btn-info" onclick="document.getElementById('bulb').src='https://www.w3schools.com/js/pic_bulboff.gif';">turn off</button>
+<tr>
+	<br>
+	<br>
+	<p class="randomp">random game</p>
+<tr>
+	<button onclick="random()">Click</button>
+<tr><br>
+<p id="randomvalue">Here will appear the random value</p>
+
+<footer>	
+ <nav id="navbar"><div class="container-fluid">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Top button</a></li>
+      <li><a href="mail_html.php">Email</a></li>
+    </ul>
+  </div>
+	</nav>
+</footer>	
+</body>	
+		</html>
+      
+
+
